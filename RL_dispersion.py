@@ -47,7 +47,6 @@ def Ai(k, omega):
     alpha2 = k**2 - omega**2/cl**2+0j
     beta2 =  k**2 - omega**2/ct**2+0j
     return sqrt(beta2)*tanh(sqrt(beta2)*h/2) - ((k**2 + beta2)**2 * tanh(sqrt(alpha2)*h/2)) / (4*k**2*sqrt(alpha2))
-    #return tanh(sqrt(beta2)*h/2)/tanh(sqrt(alpha2)*h/2) - ((k**2 + beta2)**2)/(4*k**2*sqrt(alpha2)*sqrt(beta2))
 
 
 kmax = 1.2*2*pi*frmax/ct # maximum k to be tested for frequencies 
